@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google API Practice</title>
+</head>
+<body>
+<div id="container">
+	<h1>Directions from your location</h1>
+	<p> Fill out the following form. Choose your mode of transportation and destination. By clicking submit, you are agreeing to allow HTML5's Geolocation services to determine your current location. </p>
+	<form> 
+		<fieldset>
+		<legend>Enter your information: </legend>
+			End: <br>
+			<input type="text" name="destination"> <br>
+			Select your Mode of Travel: <br>
+			<select name="travelType">
+				<option value="DRIVING">Driving</option>
+				<option value="WALKING">Walking</option>
+				<option value="BICYCLING">Bicycling</option>
+				<option value="TRANSIT">Transit</option>
+			</select>
+			<button onclick="getLocation()"> Submit! </button>
+		</fieldset>
+		
+	</form>
+	
+	<p id="location"></p>
+</div>
+
+<div id="container">
+	<div id="map"></div>
+</div>
+
+</body>
+</html>
