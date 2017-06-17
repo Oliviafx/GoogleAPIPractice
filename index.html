@@ -10,15 +10,19 @@
 	<form> 
 		<fieldset>
 		<legend>Enter your information: </legend>
-			End: <br>
+			<!--
+			Start: <br>
+			<input type="checkbox" name="location"> My location (required) <br> 
+			-->
+			Destination: <br>
 			<input type="text" name="destination"> <br>
 			Select your Mode of Travel: <br>
-			<select name="travelType">
+			<select name="mode">
 				<option value="DRIVING">Driving</option>
 				<option value="WALKING">Walking</option>
 				<option value="BICYCLING">Bicycling</option>
 				<option value="TRANSIT">Transit</option>
-			</select>
+			</select> <br>
 			<button onclick="getLocation()"> Submit! </button>
 		</fieldset>
 		
